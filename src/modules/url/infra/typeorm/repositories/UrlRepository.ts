@@ -1,4 +1,4 @@
-import { getRepository, MoreThan, Repository } from 'typeorm';
+import { getRepository, Repository } from 'typeorm';
 
 import IUrlRepository from '@modules/url/repositories/IUrlRepository';
 import ICreateUrlDTO from '@modules/url/dtos/ICreateUrlDTO';
@@ -9,12 +9,6 @@ class UrlRepository implements IUrlRepository {
 
   constructor() {
     this.ormRepository = getRepository(Url);
-  }
-
-  public async findAll(): Promise<Url[] | undefined> {
-    return this.ormRepository.find({
-      where: { expires_at: MoreThan(new Date()) },
-    });
   }
 
   public async findByHash(hash: string): Promise<Url | undefined> {

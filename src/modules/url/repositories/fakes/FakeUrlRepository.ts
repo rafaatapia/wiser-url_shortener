@@ -7,10 +7,6 @@ import Url from '../../infra/typeorm/entities/Url';
 class UrlRepository implements IUrlRepository {
   private urls: Url[] = [];
 
-  public async findAll(): Promise<Url[] | undefined> {
-    return this.urls;
-  }
-
   public async findByHash(hash: string): Promise<Url | undefined> {
     const url = this.urls.find(currentUrl => currentUrl.url_hash === hash);
     return url;
