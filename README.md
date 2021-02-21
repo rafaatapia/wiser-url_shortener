@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to Wiser - Url Shortener 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="short.doc.tapia.com.br" target="_blank">
+  <a href="https://shortdoc.tapia.com.br" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="#" target="_blank">
@@ -11,7 +11,7 @@
 
 > A URL shortener created using NodeJS, Typescript, Express and PostgreSQL. Generates a short URL that be available for 24 hours.
 
-### 🏠 [Homepage](short.tapia.com.br)
+### 🏠 [Homepage](https://short.tapia.com.br)
 
 ## Install
 
@@ -23,6 +23,12 @@ yarn install
 
 ```sh
 docker-compose up -d
+```
+
+or...
+
+```sh
+yarn build && node src/shared/infra/http/server.js
 ```
 
 ## Run tests
