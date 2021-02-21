@@ -39,7 +39,7 @@ docker-compose up -d
 or...
 
 ```sh
-yarn build && node src/shared/infra/http/server.js
+yarn build && node dist/shared/infra/http/server.js
 ```
 
 ## Run tests
