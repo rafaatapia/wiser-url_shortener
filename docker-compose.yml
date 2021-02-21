@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  api:
+    build:
+      context: .
+    ports:
+      - 3333:3333
+    depends_on:
+      - "postgres"
+    networks:
+      - urlshortener
+
+  postgres:
+    image: 'bitnami/postgresql:latest'
+    ports:
+      - '5433:5432'
+    networks:
+      - urlshortener
+    environment:
+      - POSTGRESQL_USERNAME=postgres
+      - POSTGRESQL_PASSWORD=postgres
+      - POSTGRESQL_DATABASE=wiser
+
+networks:
+  urlshortener:
+    name: urlshortener
+    external: true

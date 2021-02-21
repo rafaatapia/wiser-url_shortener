@@ -10,3 +10,4 @@ ormconfig.json
 dist/
 tmp/*
 node_modules
+postgresql-persistence
