@@ -9,9 +9,14 @@
   </a>
 </p>
 
-> A URL shortener created using NodeJS, Typescript, Express and PostgreSQL. Generates a short URL that be available for 24 hours.
+> A URL shortener created using NodeJS, Typescript, Express, PostgreSQL and NanoID. Generates a short URL that be available for 24 hours.
 
-### 🏠 [Homepage](https://short.tapia.com.br)
+
+##### 🏠 [API](https://short.tapia.com.br)
+##### 📖 [Documentation](https://short.tapia.com.br)
+
+## How it works?
+The API creates a unique hash using [NanoID](https://github.com/ai/nanoid) and saves it on database with a 24h expiration time. The alphabet used to generate the hash guarantee that 15 years needed, in order to have a 1% probability of at least one collision.
 
 ## Install
 
@@ -21,6 +26,12 @@ yarn install
 
 ## Usage
 
+##### Development
+```sh
+yarn dev
+```
+
+##### Production
 ```sh
 docker-compose up -d
 ```
