@@ -15,6 +15,10 @@
 ##### 🏠 [API](https://short.tapia.com.br)
 ##### 📖 [Documentation](https://app.swaggerhub.com/apis-docs/rafaatapia/URL-Shortener/1.0.0-oas3)
 
+#### Example
+URL to this repository
+https://short.tapia.com.br/DzcKN1cF9K
+
 ## How it works?
 The API creates a unique hash using [NanoID](https://github.com/ai/nanoid) and saves it on database with a 24h expiration time. The alphabet used to generate the hash guarantee that 15 years needed, in order to have a 1% probability of at least one collision.
 
