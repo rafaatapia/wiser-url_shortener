@@ -1,7 +1,7 @@
 <h1 align="center">Welcome to Wiser - Url Shortener 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <a href="https://shortdoc.tapia.com.br" target="_blank">
+  <a href="https://app.swaggerhub.com/apis-docs/rafaatapia/URL-Shortener/1.0.0-oas3" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="#" target="_blank">
@@ -13,7 +13,7 @@
 
 
 ##### 🏠 [API](https://short.tapia.com.br)
-##### 📖 [Documentation](https://short.tapia.com.br)
+##### 📖 [Documentation](https://app.swaggerhub.com/apis-docs/rafaatapia/URL-Shortener/1.0.0-oas3)
 
 ## How it works?
 The API creates a unique hash using [NanoID](https://github.com/ai/nanoid) and saves it on database with a 24h expiration time. The alphabet used to generate the hash guarantee that 15 years needed, in order to have a 1% probability of at least one collision.
